@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!--  page banner -->
+<header id="page-banner" class="banner-main-block">
+    <div class="banner-img" style="background-image: url('{% static 'images/top-banner.jpg' %}')">       
+      <div class="overlay-bg"></div>
+      <div class="container">
+        <div class="banner-block">
+          <h3 class="section-heading">{% include 'alert.html' %}</h3>
+          <ol class="breadcrumb">
+            <li><a href="{% url 'home' %}">Return Home</a></li>
+            <li class="active"><a>Contact Us</a></li>
+          </ol>
+        </div>
+      </div>     
+    </div>
+  </header>
+<!--  end page banner -->
+{% endblock content %}

@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!--  slider -->
+<header id="home-slider" class="slider-main-block">
+    <div class="item home-slider-img" style="background-image: url('{% static 'images/gen.jpg' %}')">
+      <div class="overlay-bg"></div>
+      <div class="container">
+        <div class="slider-dtl">
+          <h1 class="slider-heading">Welcome to Praise God Anglican Church, Nekede Owerri</h1>
+          <h5 class="slider-subheading">Tithing is a sacred gift to health and wealth</h5>
+          <div class="slider-btn">
+            <span class="about-more-btn"><a href="{% url 'contact' %}" class="btn btn-inverse">Contact Us</a></span>
+            <span class="slider-donate-btn"><a href="donation-details.html" class="btn btn-default">Tithe Payment</a></span>
+          </div>
+        </div>
+      </div>     
+    </div>
+    <div class="item home-slider-img" style="background-image: url('{% static 'images/gen2.jpg' %}')">
+      <div class="overlay-bg"></div>
+      <div class="container">
+        <div class="slider-dtl">
+          <h1 class="slider-heading">Welcome to Praise God Anglican Church, Nekede Owerri</h1>
+          <h5 class="slider-subheading">Every gift  opens a heavenly door to the giver</h5>
+          <div class="slider-btn">
+            <span class="about-more-btn"><a href="{% url 'contact' %}" class="btn btn-inverse">Contact Us</a></span>
+            <span class="slider-donate-btn"><a href="donation-details.html" class="btn btn-default">Tithe Payment</a></span>
+          </div>
+        </div>
+      </div>     
+    </div>
+    <div class="item home-slider-img" style="background-image: url('{% static 'images/slider-03.jpg' %}')">
+      <div class="overlay-bg"></div>
+      <div class="container">
+        <div class="slider-dtl">
+          <h1 class="slider-heading">Welcome to Praise God Anglican Church, Nekede Owerri</h1>
+          <h5 class="slider-subheading">Tithing is an open door to wealth</h5>
+          <div class="slider-btn">
+            <span class="about-more-btn"><a href="{% url 'contact' %}" class="btn btn-inverse">Contact Us</a></span>
+            <span class="slider-donate-btn"><a href="" class="btn btn-default">Tithe Payment</a></span>
+          </div>
+        </div>
+      </div>     
+    </div>
+  </header>
+<!--  end slider -->
+<!--  about  -->
+<section id="event-counter" class="event-counter-main-block">
+    <div class="container-fluid">
+      <div class="row row-full-spacing">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="event-counter-blockOne">
+            <div class="bg-img" style="background-image: url('{% static 'images/event/event-bg.jpg' %}')">
+              <div class="overlay-bg"></div>
+              <div class="event-counter-block">
+                <div class="row">
+                  <div class="col-sm-offset-3 col-sm-1 col-xs-offset-2 col-xs-1">
+                    <div class="event-counter-icon"><i class="fa fa-calendar"></i></div>
+                  </div>
+                  <div class="col-sm-8 col-xs-9">
+                    <div class="event-counter-content">
+                      <h4 class="event-counter-heading">Latest Events<i class="fa fa-long-arrow-right"></i></h4>
+                      <h5 class="event-counter-subheading">For any information any latest event you can contact us today.</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="event-counter-blockTwo">
+            <div class="bg-img" style="background-image: url('{% static 'images/event/counter-bg.jpg' %}')">
+              <div class="overlay-bg"></div>
+              <div class="event-counter-block">
+                <div class="event-countdown">
+                  <div class="coming-countdown" data-countdown="2023/1/10"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--  end event countdown -->
+
+    
+{% endblock content %}
+    
